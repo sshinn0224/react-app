@@ -22,7 +22,7 @@ const AutoComplete = ({ allPokemons, setDisplayedPokemons }: AutocompleteProps) 
     setSearchTerm('')
   }
 
-  const checkEqualName = (input) => {
+  const checkEqualName = (input: string) => {
     const filteredArray = filterNames(input)
 
     return filteredArray[0]?.name === input ? [] : filteredArray
